@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "generate": "apidoc -i 'api description' -o doc"
-  },
-  "dependencies": {
-    "apidoc": "^0.17.6"
-  }
-}
