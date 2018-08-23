@@ -1,18 +1,18 @@
 /**
- * @api {get} /json/extra-services-new
- * запросить инфомацию о заказе
- * @apiDescription
- * В ответ приходит информация о заказе со всеми ценами(totalPrice), налогами (totalTax)
- * и пассажирами к которым относится этот заказ
- * @apiName order info
- * @apiGroup Order
- *
- *
- *
- *
- * @apiSuccessExample {json} success:
- *
- *
+ @api {get} /json/extra-services-new
+ запросить инфомацию о заказе
+ @apiDescription
+ В ответ приходит информация о заказе со всеми ценами(totalPrice), налогами (totalTax)
+ и пассажирами к которым относится этот заказ
+ @apiName order info
+ @apiGroup Order
+
+
+
+
+ @apiSuccessExample {json} success:
+
+
  {
    "pricesNotIssued": {
      "totalTax": "2726.00",
@@ -282,20 +282,4 @@
    "exchangeAllowed": false,
    "paymentConfirmationAllowed": "false"
  }
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
  */

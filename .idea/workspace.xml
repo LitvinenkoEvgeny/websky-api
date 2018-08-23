@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92d5ed14-4671-4d4e-b248-1b839e63f2d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/api description/order/extra-services-modify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api description/order/extra-services-new.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api description/order/order-info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api description/payment/pricevariant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api description/order/change-payment-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api description/order/do-booking-and-register-order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api description/order/search-order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api description/passengers-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/order/passengers-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/dependence-cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/dependence-cities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/get-availability-for-direction.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/get-availability-for-direction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/order/extra-services-modify.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/order/extra-services-modify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/order/extra-services-new.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/order/extra-services-new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/order/order-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/order/order-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/order/passengers-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/order/passengers-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/payment/pricevariant.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/payment/pricevariant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/api_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/api_data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/api_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/doc/api_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/api_project.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/api_project.js" afterDir="false" />
@@ -28,42 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="apidoc.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apidoc.json">
+      <file leaf-file-name="passengers-add.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api description/order/passengers-add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dependence-cities.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beautify.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beautify.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="get-availability-for-direction.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api description/get-availability-for-direction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search-variants-mono-brand-cartesian.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="396">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -71,19 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passengers-add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api description/order/passengers-add.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="extra-services-new.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api description/order/extra-services-new.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="7257">
+              <caret line="404" selection-start-line="404" selection-end-line="404" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -94,7 +61,8 @@
       <file leaf-file-name="pricevariant.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api description/payment/pricevariant.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="462">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -102,11 +70,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extra-services-modify.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dependence-cities.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get-availability-for-direction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api description/get-availability-for-direction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search-variants-mono-brand-cartesian.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extra-services-modify.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api description/order/extra-services-modify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search-order.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api description/order/search-order.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order-info.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api description/order/order-info.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="284" selection-start-line="284" selection-end-line="284" />
             </state>
           </provider>
         </entry>
@@ -143,15 +162,20 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/api description/cartesian-search-period.js" />
-        <option value="$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js" />
         <option value="$PROJECT_DIR$/api description/passengers-add.js" />
-        <option value="$PROJECT_DIR$/api description/order/passengers-add.js" />
-        <option value="$PROJECT_DIR$/api description/order/extra-services-new.js" />
-        <option value="$PROJECT_DIR$/api description/beautify.json" />
-        <option value="$PROJECT_DIR$/api description/order/order-info.js" />
         <option value="$PROJECT_DIR$/beautify.json" />
-        <option value="$PROJECT_DIR$/api description/payment/pricevariant.js" />
+        <option value="$PROJECT_DIR$/api description/beautify.json" />
+        <option value="$PROJECT_DIR$/api description/order/do-booking-and-register-order.js" />
+        <option value="$PROJECT_DIR$/api description/order/search-order.js" />
+        <option value="$PROJECT_DIR$/api description/order/order-info.js" />
+        <option value="$PROJECT_DIR$/api description/order/change-payment-form.js" />
         <option value="$PROJECT_DIR$/api description/order/extra-services-modify.js" />
+        <option value="$PROJECT_DIR$/api description/order/extra-services-new.js" />
+        <option value="$PROJECT_DIR$/api description/order/passengers-add.js" />
+        <option value="$PROJECT_DIR$/api description/payment/pricevariant.js" />
+        <option value="$PROJECT_DIR$/api description/dependence-cities.js" />
+        <option value="$PROJECT_DIR$/api description/get-availability-for-direction.js" />
+        <option value="$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js" />
       </list>
     </option>
   </component>
@@ -200,6 +224,12 @@
               <item name="api description" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="websky-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="websky-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="api description" type="462c0819:PsiDirectoryNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -214,6 +244,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api description/order" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api description/order" />
     </key>
@@ -240,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535027880411</updated>
-      <workItem from="1535027881491" duration="9303000" />
+      <workItem from="1535027881491" duration="11164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9303000" />
+    <option name="totallyTimeSpent" value="11164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="25" width="960" height="1055" extended-state="4" />
@@ -318,40 +351,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api description/order/order-info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api description/get-availability-for-direction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beautify.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apidoc.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -360,38 +361,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api description/beautify.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api description/order/passengers-add.js">
+    <entry file="file://$PROJECT_DIR$/api description/order/do-booking-and-register-order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="360">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api description/order/extra-services-new.js">
+    <entry file="file://$PROJECT_DIR$/api description/order/change-payment-form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api description/payment/pricevariant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api description/order/extra-services-modify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/order/extra-services-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7257">
+          <caret line="404" selection-start-line="404" selection-end-line="404" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/order/order-info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/order/passengers-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/order/search-order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/beautify.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/payment/pricevariant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/get-availability-for-direction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>

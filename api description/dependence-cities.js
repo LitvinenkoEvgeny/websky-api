@@ -1,16 +1,11 @@
 /**
- * @api {get, post} /json/dependence-cities Получить IATA коды доступных городов
- * @apiName get Cities
- * @apiGroup Cities
- *
- * @apiParam {string} [cityCode] IATA код аэропорта вылета, если передан, вернется только {destination: [...]}
- * @apiParam {string} [returnPoints]  Возвращать только аэропорты назначения или вернуть объект origin
- * @apiParam {boolean} [isBooking]  ???
- *
- * @apiSuccessExample {json} Без параметра returnPoints и cityCode:
- *
- *
- *
+ @api {get, post} /json/dependence-cities Получить IATA коды доступных городов
+ @apiName get Cities
+ @apiGroup Cities
+ @apiParam {string} [cityCode] IATA код аэропорта вылета, если передан, вернется только {destination: [...]}
+ @apiParam {string} [returnPoints]  Возвращать только аэропорты назначения или вернуть объект origin
+ @apiParam {boolean} [isBooking]  ???
+ @apiSuccessExample {json} Без параметра returnPoints и cityCode:
  {
    "result": "ok",
    "destination": [
@@ -58,13 +53,7 @@
      ...
    ]
  }
- *
- *
- *
- *
- *
- *
- * @apiSuccessExample {json} Без параметров returnPoints и cityCode:
+ @apiSuccessExample {json} Без параметров returnPoints и cityCode:
  {
    "result": "ok",
 
@@ -87,15 +76,7 @@
          }
        ]
      }
-   ],
-*
-*
-*
-*
-*
-*
-*
-*/
+   ],****/
 
 
 
