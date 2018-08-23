@@ -13,11 +13,11 @@
      @apiParam {string} firstName[n] Имя пассажира
      @apiParam {string} lastName[n]  Фамилия пассажра
      @apiParam {string} gender[n] Пол
-     @apiParam {string} dateOfBirth[n] Дата рождения
+     @apiParam {date} dateOfBirth[n] Дата рождения
      @apiParam {string} nationality[n] Код страны, указанной в графе национальность
      @apiParam {string} documentType[n] Тип документа
-     @apiParam {string} documentNumber[n] Номер документа
-     @apiParam {string} documentDate[n]  Дата, по которую документ действительный
+     @apiParam {number} documentNumber[n] Номер документа
+     @apiParam {date} documentDate[n]  Дата, по которую документ действительный
      @apiParam {string} phone[n]  Номер телефона
      @apiParam {string} email[n] email
  *
