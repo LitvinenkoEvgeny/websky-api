@@ -5,7 +5,7 @@
  @apiGroup dates
  @apiParam {string} origin-city-code IATA код аэропорта вылета
  @apiParam {string} destination-city-code  IATA код аэропорта прилета
- @apiSuccessExample {json} success:
+ @apiSuccessExample {json} {"origin-city-code": "MOV", "destination-city-code": "MRV" }:
  {
    "result": "ok",
    "availabilityInfoDates": [
