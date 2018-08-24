@@ -1,8 +1,9 @@
 /**
- @api {post} /json/search-variants-mono-brand-cartesian
+ @api {post} /json/cartesian-search-period
+
+ @apiDescription
  Получить доступные сегменты. отличается от search-variants-mono-brand-cartesian
  тем что второй ищет сегменты на день
- @apiName get available segments
  @apiGroup segments
 
 

@@ -1,9 +1,12 @@
 /**
  @api {post} /json/search-variants-mono-brand-cartesian
- Получить доступные сегменты. отличается от cartesian-search-period
+
+ @apiDescription
+ Получить доступные сегменты на день. отличается от cartesian-search-period
  тем что второй ищет сегменты на неделю
+
  @apiName get available segments
- @apiGroup segments
+ @apiGroup brands
 
 
  @apiParam {string} segmentsCount Кол-во пассажиров

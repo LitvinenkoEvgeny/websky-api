@@ -1,11 +1,13 @@
 /**
- @api {post} /json/dependence-cities
+ @api {post} /json/passengers-add
  Добавить пассажиров к заказу
- @apiDescription
- Поскольку может быть несколько пассажиров
+
+ @apiDescription Поскольку может быть несколько пассажиров
  поля могут дублироваться как firstName[1], firstName[2] etc.
+
  @apiName add passengers
  @apiGroup Order
+
  @apiParam {string} categoryCode[n] ???
  @apiParam {string} firstName[n] Имя пассажира
  @apiParam {string} lastName[n]  Фамилия пассажра
@@ -17,6 +19,9 @@
  @apiParam {date} documentDate[n]  Дата, по которую документ действительный
  @apiParam {string} phone[n]  Номер телефона
  @apiParam {string} email[n] email
+
  @apiSuccessExample {json} success:
  {"result":"ok"}
+
+
  */

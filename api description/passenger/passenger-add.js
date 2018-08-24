@@ -1,7 +1,6 @@
 /**
  @api {get} /json/passenger-add
  добавить пассажира к заказу
- @apiDescription
 
  @apiName add passenger
  @apiGroup Passenger
