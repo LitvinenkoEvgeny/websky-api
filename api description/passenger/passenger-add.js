@@ -7,6 +7,7 @@
 
 
  @apiParam {string} categoryCode Трехбуквенный код пассажира [Взрослый, ребенок, младенец] [AAA, RGB, RMG]
+
  @apiParam {string} firstName[1] Имя пассажира
  @apiParam {string} lastName[1] Фамилия пассажира
  @apiParam {string} gender[1] Пол пассажира
