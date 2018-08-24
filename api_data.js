@@ -65,7 +65,7 @@ define({ "api": [
             "type": "string",
             "optional": false,
             "field": "categoryCode[n]",
-            "description": "<p>???</p>"
+            "description": "<p>Трехбуквенный код пассажира [Взрослый, ребенок, младенец] [AAA, RGB, RMG]</p>"
           },
           {
             "group": "Parameter",
@@ -415,7 +415,7 @@ define({ "api": [
             "type": "string",
             "optional": false,
             "field": "categoryCode",
-            "description": ""
+            "description": "<p>Трехбуквенный код пассажира [Взрослый, ребенок, младенец] [AAA, RGB, RMG]</p>"
           },
           {
             "group": "Parameter",
