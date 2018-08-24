@@ -4,7 +4,6 @@
  @apiGroup Cities
  @apiParam {string} [cityCode] IATA код аэропорта вылета, если передан, вернется только {destination: [...]}
  @apiParam {string} [returnPoints]  Возвращать только аэропорты назначения или вернуть объект origin
- @apiParam {boolean} [isBooking]  ???
  @apiSuccessExample {json} Без параметра returnPoints и cityCode:
 
  {

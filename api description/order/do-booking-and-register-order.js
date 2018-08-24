@@ -1,5 +1,5 @@
 /**
- @api {post} do-booking-and-register-order
+ @api {post} /json/do-booking-and-register-order
  зарегистрировать заказ
  @apiDescription
  в ответ либо {"result": "ok"} либо код и описание ошибки
@@ -8,7 +8,7 @@
 
  @apiParam {string} payment-form Способ оплаты
  @apiParam {string} payment-type Тип оплаты
- @apiParam {boolean} removeInsuranceAeroExpress ???
+ @apiParam {boolean} removeInsuranceAeroExpress когда экспресс или страховка несовместимы с выбранной формой оплаты, этот флаг форсирует удаление
  @apiSuccessExample {json} success:
 
  {

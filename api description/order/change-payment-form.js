@@ -5,7 +5,7 @@
  в ответ либо {"result": "ok"} либо код и описание ошибки
  @apiName modify service
  @apiGroup Order
- @apiParam {string} formPay  ???
+ @apiParam {string} formPay  Форма оплаты
  @apiSuccessExample {json} success:
  {"result" : "ok"}
  */
