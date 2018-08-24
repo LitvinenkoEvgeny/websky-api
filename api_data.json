@@ -21,13 +21,6 @@
             "optional": true,
             "field": "returnPoints",
             "description": "<p>Возвращать только аэропорты назначения или вернуть объект origin</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "boolean",
-            "optional": true,
-            "field": "isBooking",
-            "description": "<p>???</p>"
           }
         ]
       }
@@ -187,7 +180,7 @@
             "type": "string",
             "optional": false,
             "field": "formPay",
-            "description": "<p>???</p>"
+            "description": "<p>Форма оплаты</p>"
           }
         ]
       }
@@ -316,7 +309,7 @@
   },
   {
     "type": "post",
-    "url": "do-booking-and-register-order",
+    "url": "/json/do-booking-and-register-order",
     "title": "зарегистрировать заказ",
     "description": "<p>в ответ либо {&quot;result&quot;: &quot;ok&quot;} либо код и описание ошибки</p>",
     "name": "register_order",
@@ -343,7 +336,7 @@
             "type": "boolean",
             "optional": false,
             "field": "removeInsuranceAeroExpress",
-            "description": "<p>???</p>"
+            "description": "<p>когда экспресс или страховка несовместимы с выбранной формой оплаты, этот флаг форсирует удаление</p>"
           }
         ]
       }
