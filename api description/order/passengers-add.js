@@ -8,7 +8,7 @@
  @apiName add passengers
  @apiGroup Order
 
- @apiParam {string} categoryCode[n] ???
+ @apiParam {string} categoryCode[n] Трехбуквенный код пассажира [Взрослый, ребенок, подросток] [AAA, RGB, RMG]
  @apiParam {string} firstName[n] Имя пассажира
  @apiParam {string} lastName[n]  Фамилия пассажра
  @apiParam {string} gender[n] Пол
