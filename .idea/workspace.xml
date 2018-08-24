@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92d5ed14-4671-4d4e-b248-1b839e63f2d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api description/dependence-cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/api description/dependence-cities.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,16 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="180">
-                <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              </first_editor>
+              <first_editor />
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dependence-cities.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -158,13 +164,13 @@
         <option value="$PROJECT_DIR$/api description/order/order-info.js" />
         <option value="$PROJECT_DIR$/api description/order/change-payment-form.js" />
         <option value="$PROJECT_DIR$/api description/search-variants-mono-brand-cartesian.js" />
-        <option value="$PROJECT_DIR$/api description/dependence-cities.js" />
         <option value="$PROJECT_DIR$/api description/payment/pricevariant.js" />
         <option value="$PROJECT_DIR$/api description/order/extra-services-new.js" />
         <option value="$PROJECT_DIR$/api description/order/passengers-add.js" />
         <option value="$PROJECT_DIR$/api description/order/extra-services-modify.js" />
         <option value="$PROJECT_DIR$/api description/get-availability-for-direction.js" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/api description/dependence-cities.js" />
       </list>
     </option>
   </component>
@@ -263,16 +269,15 @@
       <option name="presentableId" value="Default" />
       <updated>1535027880411</updated>
       <workItem from="1535027881491" duration="11782000" />
-      <workItem from="1535094824750" duration="771000" />
+      <workItem from="1535094824750" duration="1018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12553000" />
+    <option name="totallyTimeSpent" value="12800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="25" width="960" height="1053" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31041667" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -283,7 +288,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32979852" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32979852" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -407,13 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api description/payment/pricevariant.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -491,12 +489,17 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          </first_editor>
+          <first_editor />
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api description/dependence-cities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
