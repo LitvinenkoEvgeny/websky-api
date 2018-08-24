@@ -6,12 +6,13 @@
  @apiName price variant
  @apiGroup Price
  @apiSuccessExample {json} success:
+
  [
  {
    "conflicts_with_timelimit": "false",
    "code": "plastic_card",
    "conflicts_with_insurance": "false",
-   "price": "133926.00",
+   "price": "42755.00",
    "name": "Пластиковая карта",
    "currency": "RUB",
    "paymentTypes": {
@@ -20,7 +21,8 @@
    "type": "online",
    "conflicts_with_aeroexpress": "false",
    "selected": "true",
-   "timelimit": "23.08.2018 17:58"
+   "timelimit": "24.08.2018 11:25"
  }
  ]
+
  */

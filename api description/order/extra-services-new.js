@@ -4,157 +4,51 @@
  @apiName extra services new
  @apiGroup Order
  @apiSuccessExample {json} success:
+
  [
  {
-   "code": "insurance",
-   "type": "insurance",
-   "items": [
-     {
-       "insurance": "250000.00",
-       "luggage": null,
-       "luggage_premium": null,
-       "currency": "RUB",
-       "tins": "TM",
-       "insurance_premium": "500.00",
-       "ins": "A"
-     }
-   ]
- },
- {
-   "defaultSelected": true,
+   "defaultSelected": false,
    "bulkAdd": false,
    "passengers": [
      {
        "id": 1,
        "segments": [
          {
-           "id": 1,
+           "id": 3,
            "availableExtraServices": [
              [
                {
                  "serviceType": "F",
-                 "rfisc": "0LQ",
+                 "rfisc": "ML1",
                  "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
+                 "price": "699.00",
+                 "limit": 1,
                  "affectedSegmentIds": [],
-                 "description": "Описание",
+                 "description": "Поло Эль Форно",
                  "currency": "RUB",
-                 "title": "Холодное блюдо"
-               }
-             ],
-             [
+                 "title": "Поло Эль Форно"
+               },
                {
                  "serviceType": "F",
-                 "rfisc": "0LP",
+                 "rfisc": "ML2",
                  "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
+                 "price": "699.00",
+                 "limit": 1,
                  "affectedSegmentIds": [],
-                 "description": " ",
+                 "description": "Паста Карбонара",
                  "currency": "RUB",
-                 "title": "web.extraServices.0LP.F.ALL.title"
-               }
-             ]
-           ],
-           "empty": false
-         },
-         {
-           "id": 2,
-           "availableExtraServices": [
-             [
+                 "title": "Паста Карбонара"
+               },
                {
                  "serviceType": "F",
-                 "rfisc": "0LQ",
+                 "rfisc": "ML3",
                  "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
+                 "price": "749.00",
+                 "limit": 1,
                  "affectedSegmentIds": [],
-                 "description": "Описание",
+                 "description": "Салмоне кон фомоджио",
                  "currency": "RUB",
-                 "title": "Холодное блюдо"
-               }
-             ],
-             [
-               {
-                 "serviceType": "F",
-                 "rfisc": "0LP",
-                 "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
-                 "affectedSegmentIds": [],
-                 "description": " ",
-                 "currency": "RUB",
-                 "title": "web.extraServices.0LP.F.ALL.title"
-               }
-             ]
-           ],
-           "empty": false
-         }
-       ]
-     },
-     {
-       "id": 2,
-       "segments": [
-         {
-           "id": 1,
-           "availableExtraServices": [
-             [
-               {
-                 "serviceType": "F",
-                 "rfisc": "0LQ",
-                 "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
-                 "affectedSegmentIds": [],
-                 "description": "Описание",
-                 "currency": "RUB",
-                 "title": "Холодное блюдо"
-               }
-             ],
-             [
-               {
-                 "serviceType": "F",
-                 "rfisc": "0LP",
-                 "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
-                 "affectedSegmentIds": [],
-                 "description": " ",
-                 "currency": "RUB",
-                 "title": "web.extraServices.0LP.F.ALL.title"
-               }
-             ]
-           ],
-           "empty": false
-         },
-         {
-           "id": 2,
-           "availableExtraServices": [
-             [
-               {
-                 "serviceType": "F",
-                 "rfisc": "0LQ",
-                 "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
-                 "affectedSegmentIds": [],
-                 "description": "Описание",
-                 "currency": "RUB",
-                 "title": "Холодное блюдо"
-               }
-             ],
-             [
-               {
-                 "serviceType": "F",
-                 "rfisc": "0LP",
-                 "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 2,
-                 "affectedSegmentIds": [],
-                 "description": " ",
-                 "currency": "RUB",
-                 "title": "web.extraServices.0LP.F.ALL.title"
+                 "title": "Салмоне кон фомоджио"
                }
              ]
            ],
@@ -171,14 +65,9 @@
    "structure": {
      "subgroups": [
        {
-         "code": "cold",
-         "title": "Холодные",
-         "type": "MULTIPLE_SELECT"
-       },
-       {
-         "code": "special",
-         "title": "Специальные",
-         "type": "MULTIPLE_SELECT"
+         "code": "hot",
+         "title": "Горячие",
+         "type": "SELECT"
        }
      ]
    },
@@ -196,72 +85,113 @@
            "availableExtraServices": [
              [
                {
-                 "serviceType": "F",
-                 "rfisc": "CMF",
+                 "serviceType": "P",
+                 "rfisc": "0GP",
                  "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 1,
-                 "affectedSegmentIds": [],
-                 "description": "web.extraServices.CMF.F.ALL.description",
+                 "price": "4000.00",
+                 "limit": 9,
+                 "affectedSegmentIds": [
+                   1,
+                   2
+                 ],
+                 "description": "web.extraServices.0GP.P.ALL.description",
                  "currency": "RUB",
-                 "title": "web.extraServices.CMF.F.ALL.title"
+                 "title": "Багаж до 23кг"
+               },
+               {
+                 "serviceType": "P",
+                 "rfisc": "0M6",
+                 "shouldSelectByDefault": false,
+                 "price": "8000.00",
+                 "limit": 9,
+                 "affectedSegmentIds": [
+                   1,
+                   2
+                 ],
+                 "description": "web.extraServices.0M6.P.ALL.description",
+                 "currency": "RUB",
+                 "title": "Багаж от 24кг до 30кг"
                }
              ]
            ],
            "empty": false
          },
          {
-           "id": 2,
+           "id": 3,
            "availableExtraServices": [
              [
                {
-                 "serviceType": "F",
-                 "rfisc": "CMF",
+                 "serviceType": "P",
+                 "rfisc": "0GP",
                  "shouldSelectByDefault": false,
-                 "price": "300.00",
-                 "limit": 1,
+                 "price": "2000.00",
+                 "limit": 9,
                  "affectedSegmentIds": [],
-                 "description": "web.extraServices.CMF.F.ALL.description",
+                 "description": "web.extraServices.0GP.P.ALL.description",
                  "currency": "RUB",
-                 "title": "web.extraServices.CMF.F.ALL.title"
+                 "title": "Багаж до 23кг"
+               },
+               {
+                 "serviceType": "P",
+                 "rfisc": "0M6",
+                 "shouldSelectByDefault": false,
+                 "price": "4000.00",
+                 "limit": 9,
+                 "affectedSegmentIds": [],
+                 "description": "web.extraServices.0M6.P.ALL.description",
+                 "currency": "RUB",
+                 "title": "Багаж от 24кг до 30кг"
                }
              ]
            ],
            "empty": false
          }
        ]
-     },
+     }
+   ],
+   "code": "baggage",
+   "iconCode": null,
+   "title": "Багаж",
+   "showMinPrice": false,
+   "autoExpand": false,
+   "structure": {
+     "subgroups": [
+       {
+         "code": "common",
+         "title": "Багаж",
+         "type": "COUNTABLE_MULTIPLE_SELECT"
+       }
+     ]
+   },
+   "empty": false
+ },
+ {
+   "defaultSelected": false,
+   "bulkAdd": false,
+   "passengers": [
      {
-       "id": 2,
+       "id": 1,
        "segments": [
          {
-           "id": 1,
+           "id": 3,
            "availableExtraServices": [
              [
                {
                  "serviceType": "F",
-                 "rfisc": "CMF",
+                 "rfisc": "BAS",
                  "shouldSelectByDefault": false,
                  "price": "300.00",
                  "limit": 1,
                  "affectedSegmentIds": [],
-                 "description": "web.extraServices.CMF.F.ALL.description",
+                 "description": "web.extraServices.BAS.F.ALL.description",
                  "currency": "RUB",
-                 "title": "web.extraServices.CMF.F.ALL.title"
-               }
-             ]
-           ],
-           "empty": false
-         },
-         {
-           "id": 2,
-           "availableExtraServices": [
-             [
+                 "title": "web.extraServices.BAS.F.ALL.title"
+               },
                {
                  "serviceType": "F",
                  "rfisc": "CMF",
                  "shouldSelectByDefault": false,
-                 "price": "300.00",
+                 "price": "1000.00",
                  "limit": 1,
                  "affectedSegmentIds": [],
                  "description": "web.extraServices.CMF.F.ALL.description",
@@ -290,115 +220,7 @@
      ]
    },
    "empty": false
- },
- {
-   "defaultSelected": false,
-   "bulkAdd": false,
-   "passengers": [
-     {
-       "id": 1,
-       "segments": [
-         {
-           "id": 1,
-           "availableExtraServices": [
-             [
-               {
-                 "serviceType": "P",
-                 "rfisc": "0AA",
-                 "shouldSelectByDefault": false,
-                 "price": "450.00",
-                 "limit": 30,
-                 "affectedSegmentIds": [],
-                 "description": "web.extraServices.0AA.P.ALL.description",
-                 "currency": "RUB",
-                 "title": "Багаж"
-               }
-             ]
-           ],
-           "empty": false
-         },
-         {
-           "id": 2,
-           "availableExtraServices": [
-             [
-               {
-                 "serviceType": "P",
-                 "rfisc": "0AA",
-                 "shouldSelectByDefault": false,
-                 "price": "450.00",
-                 "limit": 30,
-                 "affectedSegmentIds": [],
-                 "description": "web.extraServices.0AA.P.ALL.description",
-                 "currency": "RUB",
-                 "title": "Багаж"
-               }
-             ]
-           ],
-           "empty": false
-         }
-       ]
-     },
-     {
-       "id": 2,
-       "segments": [
-         {
-           "id": 1,
-           "availableExtraServices": [
-             [
-               {
-                 "serviceType": "P",
-                 "rfisc": "0AA",
-                 "shouldSelectByDefault": false,
-                 "price": "450.00",
-                 "limit": 30,
-                 "affectedSegmentIds": [],
-                 "description": "web.extraServices.0AA.P.ALL.description",
-                 "currency": "RUB",
-                 "title": "Багаж"
-               }
-             ]
-           ],
-           "empty": false
-         },
-         {
-           "id": 2,
-           "availableExtraServices": [
-             [
-               {
-                 "serviceType": "P",
-                 "rfisc": "0AA",
-                 "shouldSelectByDefault": false,
-                 "price": "450.00",
-                 "limit": 30,
-                 "affectedSegmentIds": [],
-                 "description": "web.extraServices.0AA.P.ALL.description",
-                 "currency": "RUB",
-                 "title": "Багаж"
-               }
-             ]
-           ],
-           "empty": false
-         }
-       ]
-     }
-   ],
-   "code": "baggage",
-   "iconCode": null,
-   "title": "Багаж",
-   "showMinPrice": false,
-   "autoExpand": false,
-   "structure": {
-     "subgroups": [
-       {
-         "code": "common",
-         "title": "Багаж",
-         "type": "COUNTABLE_MULTIPLE_SELECT"
-       }
-     ]
-   },
-   "empty": false
  }
  ]
-
 
  */
