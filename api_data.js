@@ -40,7 +40,7 @@ define({ "api": [
           "type": "json"
         },
         {
-          "title": "Без параметров returnPoints и cityCode:",
+          "title": "С параметрами returnPoints и cityCode:",
           "content": "{\n  \"result\": \"ok\",\n\n  \"destination\": [\n    {\n      \"countryNameRu\": \"Российская Федерация\",\n      \"countryEn\": \"RU\",\n      \"nameRu\": \"Анадырь\",\n      \"countryRu\": \"РФ\",\n      \"codeRu\": \"АНЫ\",\n      \"nameEn\": \"Anadyr\",\n      \"codeEn\": \"DYR\",\n      \"countryNameEn\": \"Russian Federation\",\n      \"airports\": [\n        {\n          \"nameRu\": \"Анадырь\",\n          \"codeRu\": \"АНЫ\",\n          \"nameEn\": \"Anadyr\",\n          \"codeEn\": \"DYR\"\n        }\n      ]\n    }\n  ],***",
           "type": "json"
         }
