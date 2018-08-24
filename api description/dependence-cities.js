@@ -53,7 +53,7 @@
      ...
    ]
  }
- @apiSuccessExample {json} Без параметров returnPoints и cityCode:
+ @apiSuccessExample {json} С параметрами returnPoints и cityCode:
  {
    "result": "ok",
 
