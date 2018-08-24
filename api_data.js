@@ -52,7 +52,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/json/dependence-cities",
+    "url": "/json/passengers-add",
     "title": "Добавить пассажиров к заказу",
     "description": "<p>Поскольку может быть несколько пассажиров поля могут дублироваться как firstName[1], firstName[2] etc.</p>",
     "name": "add_passengers",
@@ -163,13 +163,46 @@ define({ "api": [
       "examples": [
         {
           "title": "success:",
-          "content": "[\n{\n  \"code\": \"insurance\",\n  \"type\": \"insurance\",\n  \"items\": [\n    {\n      \"insurance\": \"250000.00\",\n      \"luggage\": null,\n      \"luggage_premium\": null,\n      \"currency\": \"RUB\",\n      \"tins\": \"TM\",\n      \"insurance_premium\": \"500.00\",\n      \"ins\": \"A\"\n    }\n  ]\n},\n{\n  \"defaultSelected\": true,\n  \"bulkAdd\": false,\n  \"passengers\": [\n    {\n      \"id\": 1,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LQ\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Описание\",\n                \"currency\": \"RUB\",\n                \"title\": \"Холодное блюдо\"\n              }\n            ],\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LP\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \" \",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.0LP.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 2,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LQ\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Описание\",\n                \"currency\": \"RUB\",\n                \"title\": \"Холодное блюдо\"\n              }\n            ],\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LP\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \" \",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.0LP.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    },\n    {\n      \"id\": 2,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LQ\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Описание\",\n                \"currency\": \"RUB\",\n                \"title\": \"Холодное блюдо\"\n              }\n            ],\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LP\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \" \",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.0LP.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 2,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LQ\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Описание\",\n                \"currency\": \"RUB\",\n                \"title\": \"Холодное блюдо\"\n              }\n            ],\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"0LP\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 2,\n                \"affectedSegmentIds\": [],\n                \"description\": \" \",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.0LP.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    }\n  ],\n  \"code\": \"meal\",\n  \"iconCode\": null,\n  \"title\": \"Питание\",\n  \"showMinPrice\": false,\n  \"autoExpand\": false,\n  \"structure\": {\n    \"subgroups\": [\n      {\n        \"code\": \"cold\",\n        \"title\": \"Холодные\",\n        \"type\": \"MULTIPLE_SELECT\"\n      },\n      {\n        \"code\": \"special\",\n        \"title\": \"Специальные\",\n        \"type\": \"MULTIPLE_SELECT\"\n      }\n    ]\n  },\n  \"empty\": false\n},\n{\n  \"defaultSelected\": false,\n  \"bulkAdd\": false,\n  \"passengers\": [\n    {\n      \"id\": 1,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"CMF\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.CMF.F.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.CMF.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 2,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"CMF\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.CMF.F.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.CMF.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    },\n    {\n      \"id\": 2,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"CMF\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.CMF.F.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.CMF.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 2,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"CMF\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.CMF.F.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.CMF.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    }\n  ],\n  \"code\": \"seat\",\n  \"iconCode\": null,\n  \"title\": \"Выбор места\",\n  \"showMinPrice\": false,\n  \"autoExpand\": false,\n  \"structure\": {\n    \"subgroups\": [\n      {\n        \"code\": \"common\",\n        \"title\": \"Выбор места\",\n        \"type\": \"EXACT_VALUE\"\n      }\n    ]\n  },\n  \"empty\": false\n},\n{\n  \"defaultSelected\": false,\n  \"bulkAdd\": false,\n  \"passengers\": [\n    {\n      \"id\": 1,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0AA\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"450.00\",\n                \"limit\": 30,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.0AA.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 2,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0AA\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"450.00\",\n                \"limit\": 30,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.0AA.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    },\n    {\n      \"id\": 2,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0AA\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"450.00\",\n                \"limit\": 30,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.0AA.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 2,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0AA\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"450.00\",\n                \"limit\": 30,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.0AA.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    }\n  ],\n  \"code\": \"baggage\",\n  \"iconCode\": null,\n  \"title\": \"Багаж\",\n  \"showMinPrice\": false,\n  \"autoExpand\": false,\n  \"structure\": {\n    \"subgroups\": [\n      {\n        \"code\": \"common\",\n        \"title\": \"Багаж\",\n        \"type\": \"COUNTABLE_MULTIPLE_SELECT\"\n      }\n    ]\n  },\n  \"empty\": false\n}\n]",
+          "content": "\n[\n{\n  \"defaultSelected\": false,\n  \"bulkAdd\": false,\n  \"passengers\": [\n    {\n      \"id\": 1,\n      \"segments\": [\n        {\n          \"id\": 3,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"ML1\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"699.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Поло Эль Форно\",\n                \"currency\": \"RUB\",\n                \"title\": \"Поло Эль Форно\"\n              },\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"ML2\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"699.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Паста Карбонара\",\n                \"currency\": \"RUB\",\n                \"title\": \"Паста Карбонара\"\n              },\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"ML3\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"749.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"Салмоне кон фомоджио\",\n                \"currency\": \"RUB\",\n                \"title\": \"Салмоне кон фомоджио\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    }\n  ],\n  \"code\": \"meal\",\n  \"iconCode\": null,\n  \"title\": \"Питание\",\n  \"showMinPrice\": false,\n  \"autoExpand\": false,\n  \"structure\": {\n    \"subgroups\": [\n      {\n        \"code\": \"hot\",\n        \"title\": \"Горячие\",\n        \"type\": \"SELECT\"\n      }\n    ]\n  },\n  \"empty\": false\n},\n{\n  \"defaultSelected\": false,\n  \"bulkAdd\": false,\n  \"passengers\": [\n    {\n      \"id\": 1,\n      \"segments\": [\n        {\n          \"id\": 1,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0GP\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"4000.00\",\n                \"limit\": 9,\n                \"affectedSegmentIds\": [\n                  1,\n                  2\n                ],\n                \"description\": \"web.extraServices.0GP.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж до 23кг\"\n              },\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0M6\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"8000.00\",\n                \"limit\": 9,\n                \"affectedSegmentIds\": [\n                  1,\n                  2\n                ],\n                \"description\": \"web.extraServices.0M6.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж от 24кг до 30кг\"\n              }\n            ]\n          ],\n          \"empty\": false\n        },\n        {\n          \"id\": 3,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0GP\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"2000.00\",\n                \"limit\": 9,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.0GP.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж до 23кг\"\n              },\n              {\n                \"serviceType\": \"P\",\n                \"rfisc\": \"0M6\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"4000.00\",\n                \"limit\": 9,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.0M6.P.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"Багаж от 24кг до 30кг\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    }\n  ],\n  \"code\": \"baggage\",\n  \"iconCode\": null,\n  \"title\": \"Багаж\",\n  \"showMinPrice\": false,\n  \"autoExpand\": false,\n  \"structure\": {\n    \"subgroups\": [\n      {\n        \"code\": \"common\",\n        \"title\": \"Багаж\",\n        \"type\": \"COUNTABLE_MULTIPLE_SELECT\"\n      }\n    ]\n  },\n  \"empty\": false\n},\n{\n  \"defaultSelected\": false,\n  \"bulkAdd\": false,\n  \"passengers\": [\n    {\n      \"id\": 1,\n      \"segments\": [\n        {\n          \"id\": 3,\n          \"availableExtraServices\": [\n            [\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"BAS\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"300.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.BAS.F.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.BAS.F.ALL.title\"\n              },\n              {\n                \"serviceType\": \"F\",\n                \"rfisc\": \"CMF\",\n                \"shouldSelectByDefault\": false,\n                \"price\": \"1000.00\",\n                \"limit\": 1,\n                \"affectedSegmentIds\": [],\n                \"description\": \"web.extraServices.CMF.F.ALL.description\",\n                \"currency\": \"RUB\",\n                \"title\": \"web.extraServices.CMF.F.ALL.title\"\n              }\n            ]\n          ],\n          \"empty\": false\n        }\n      ]\n    }\n  ],\n  \"code\": \"seat\",\n  \"iconCode\": null,\n  \"title\": \"Выбор места\",\n  \"showMinPrice\": false,\n  \"autoExpand\": false,\n  \"structure\": {\n    \"subgroups\": [\n      {\n        \"code\": \"common\",\n        \"title\": \"Выбор места\",\n        \"type\": \"EXACT_VALUE\"\n      }\n    ]\n  },\n  \"empty\": false\n}\n]",
           "type": "json"
         }
       ]
     },
     "version": "0.0.0",
     "filename": "api description/order/extra-services-new.js",
+    "groupTitle": "Order"
+  },
+  {
+    "type": "post",
+    "url": "/json/change-payment-form",
+    "title": "Изменить способ оплаты",
+    "description": "<p>в ответ либо {&quot;result&quot;: &quot;ok&quot;} либо код и описание ошибки</p>",
+    "name": "modify_service",
+    "group": "Order",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "formPay",
+            "description": "<p>???</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\"result\" : \"ok\"}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/order/change-payment-form.js",
     "groupTitle": "Order"
   },
   {
@@ -262,39 +295,6 @@ define({ "api": [
     "groupTitle": "Order"
   },
   {
-    "type": "post",
-    "url": "/json/change-payment-form",
-    "title": "Изменить способ оплаты",
-    "description": "<p>в ответ либо {&quot;result&quot;: &quot;ok&quot;} либо код и описание ошибки</p>",
-    "name": "modify_service",
-    "group": "Order",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "formPay",
-            "description": "<p>???</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "examples": [
-        {
-          "title": "success:",
-          "content": "{\"result\" : \"ok\"}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "api description/order/change-payment-form.js",
-    "groupTitle": "Order"
-  },
-  {
     "type": "get",
     "url": "/json/extra-services-new",
     "title": "запросить инфомацию о заказе",
@@ -305,7 +305,7 @@ define({ "api": [
       "examples": [
         {
           "title": "success:",
-          "content": "\n\n{\n  \"pricesNotIssued\": {\n    \"totalTax\": \"2726.00\",\n    \"totalFare\": \"131200.00\",\n    \"totalPrice\": \"133926.00\",\n    \"taxes\": [\n      {\n        \"code\": \"RI\",\n        \"name\": \"АЭРОПОРТОВЫЙ СБОР\",\n        \"value\": \"2726.00\"\n      }\n    ],\n    \"currency\": \"RUB\",\n    \"segments\": [\n      {\n        \"aircompany\": \"Y7\",\n        \"classCode\": \"Б\",\n        \"id\": \"1\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1026.00\",\n            \"fare\": \"65600.00\",\n            \"clientId\": 7604,\n            \"passengerCount\": 2,\n            \"price\": \"66626.00\",\n            \"fareCode\": \"DRT2\",\n            \"taxes\": [\n              {\n                \"code\": \"RI\",\n                \"name\": \"АЭРОПОРТОВЫЙ СБОР\",\n                \"value\": 1026\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"Y7.Y7.C.3.ЛАЙТ\"\n          }\n        ],\n        \"racenumber\": \"103\"\n      },\n      {\n        \"aircompany\": \"Y7\",\n        \"classCode\": \"Б\",\n        \"id\": \"2\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1700.00\",\n            \"fare\": \"65600.00\",\n            \"clientId\": 7604,\n            \"passengerCount\": 2,\n            \"price\": \"67300.00\",\n            \"fareCode\": \"DRT2\",\n            \"taxes\": [\n              {\n                \"code\": \"RI\",\n                \"name\": \"АЭРОПОРТОВЫЙ СБОР\",\n                \"value\": 1700\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"Y7.Y7.C.3.ЛАЙТ\"\n          }\n        ],\n        \"racenumber\": \"3333\"\n      }\n    ]\n  },\n  \"passengers\": [\n    {\n      \"documentCode\": \"NP\",\n      \"documentDate\": \"27.11.2018\",\n      \"lastName\": \"LITVINENKO\",\n      \"hasSeats\": true,\n      \"gender\": \"male\",\n      \"documentType\": \"НАЦИОНАЛЬНЫЙ ПАСПОРТ\",\n      \"documentNumber\": \"7328742789423\",\n      \"index\": 0,\n      \"dateOfBirth\": \"27.11.1993\",\n      \"categoryCode\": \"AAA\",\n      \"eMail\": \"test@gmail.com\",\n      \"firstName\": \"EVGENY\",\n      \"nationalityCode\": \"AI\",\n      \"nationality\": \"Anguilla\",\n      \"phone\": \"79084783274\",\n      \"id\": 1\n    },\n    {\n      \"documentCode\": \"NP\",\n      \"documentDate\": \"27.11.2018\",\n      \"lastName\": \"TEST\",\n      \"hasSeats\": true,\n      \"gender\": \"male\",\n      \"documentType\": \"НАЦИОНАЛЬНЫЙ ПАСПОРТ\",\n      \"documentNumber\": \"74329874239\",\n      \"index\": 1,\n      \"dateOfBirth\": \"27.11.1993\",\n      \"categoryCode\": \"AAA\",\n      \"eMail\": \"test@gmail.com\",\n      \"firstName\": \"TEST\",\n      \"nationalityCode\": \"AI\",\n      \"nationality\": \"Anguilla\",\n      \"phone\": \"843287492372\",\n      \"id\": 2\n    }\n  ],\n  \"conditionsPath\": \"https://private.sirena-travel.ru/docs/conditions-rus-eng-tch.pdf\",\n  \"passengersWithSeatsCount\": 2,\n  \"canEnterDoco\": false,\n  \"refundAllowed\": false,\n  \"retryRegisterAllowed\": false,\n  \"addingExtraServicesAllowed\": true,\n  \"cancellationAllowed\": false,\n  \"flights\": [\n    {\n      \"date\": \"23.08.2018\",\n      \"chainId\": \"chain-1\",\n      \"flights\": [\n        {\n          \"date\": \"23.08.2018\",\n          \"originportName\": \"Домодедово\",\n          \"destinationcity\": \"NSK\",\n          \"departuredate\": \"23.08.2018\",\n          \"flightClass\": \"Б\",\n          \"delaydays\": \"0\",\n          \"flighttime\": \"4:05\",\n          \"arrivaldate\": \"24.08.2018\",\n          \"origincityName\": \"Москва\",\n          \"originport\": \"DME\",\n          \"company\": {\n            \"code\": \"Y7\",\n            \"code_en\": \"Y7\",\n            \"name\": \"НОРДСТАР\",\n            \"name_en\": \"НОРДСТАР\"\n          },\n          \"id\": 1,\n          \"airplaneName\": \"БОИНГ 737-800\",\n          \"brand\": \"Y7.Y7.C.3.ЛАЙТ\",\n          \"destinationportName\": \"Норильск Алыкель\",\n          \"destinationcityName\": \"Норильск\",\n          \"departuredayshift\": 0,\n          \"origincity\": \"MOW\",\n          \"vehicleCodeEn\": \"738\",\n          \"departuretime\": \"22:10\",\n          \"destinationport\": \"NSK\",\n          \"carrier\": \"Y7\",\n          \"arrivaldayshift\": 1,\n          \"airplane\": \"БОИНГ 737-800\",\n          \"arrivaltime\": \"06:15\",\n          \"subclass\": \"D\",\n          \"racenumber\": \"103\"\n        }\n      ]\n    },\n    {\n      \"date\": \"10.09.2018\",\n      \"chainId\": \"chain-2\",\n      \"flights\": [\n        {\n          \"date\": \"10.09.2018\",\n          \"originportName\": \"Норильск Алыкель\",\n          \"destinationcity\": \"MOW\",\n          \"departuredate\": \"10.09.2018\",\n          \"flightClass\": \"Б\",\n          \"delaydays\": \"0\",\n          \"flighttime\": \"5:30\",\n          \"arrivaldate\": \"10.09.2018\",\n          \"origincityName\": \"Норильск\",\n          \"originport\": \"NSK\",\n          \"company\": {\n            \"code\": \"Y7\",\n            \"code_en\": \"Y7\",\n            \"name\": \"НОРДСТАР\",\n            \"name_en\": \"НОРДСТАР\"\n          },\n          \"id\": 2,\n          \"airplaneName\": \"БОИНГ 737-800\",\n          \"brand\": \"Y7.Y7.C.3.ЛАЙТ\",\n          \"destinationportName\": \"Домодедово\",\n          \"destinationcityName\": \"Москва\",\n          \"departuredayshift\": 0,\n          \"origincity\": \"NSK\",\n          \"vehicleCodeEn\": \"738\",\n          \"departuretime\": \"10:00\",\n          \"destinationport\": \"DME\",\n          \"carrier\": \"Y7\",\n          \"arrivaldayshift\": 0,\n          \"airplane\": \"БОИНГ 737-800\",\n          \"arrivaltime\": \"11:30\",\n          \"subclass\": \"D\",\n          \"racenumber\": \"3333\"\n        }\n      ]\n    }\n  ],\n  \"prices\": {\n    \"totalTax\": \"2726.00\",\n    \"totalFare\": \"131200.00\",\n    \"totalPrice\": \"133926.00\",\n    \"taxes\": [\n      {\n        \"code\": \"RI\",\n        \"name\": \"АЭРОПОРТОВЫЙ СБОР\",\n        \"value\": \"2726.00\"\n      }\n    ],\n    \"currency\": \"RUB\",\n    \"segments\": [\n      {\n        \"aircompany\": \"Y7\",\n        \"classCode\": \"Б\",\n        \"id\": \"1\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1026.00\",\n            \"fare\": \"65600.00\",\n            \"clientId\": 7604,\n            \"passengerCount\": 2,\n            \"price\": \"66626.00\",\n            \"fareCode\": \"DRT2\",\n            \"taxes\": [\n              {\n                \"code\": \"RI\",\n                \"name\": \"АЭРОПОРТОВЫЙ СБОР\",\n                \"value\": 1026\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"Y7.Y7.C.3.ЛАЙТ\"\n          }\n        ],\n        \"racenumber\": \"103\"\n      },\n      {\n        \"aircompany\": \"Y7\",\n        \"classCode\": \"Б\",\n        \"id\": \"2\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1700.00\",\n            \"fare\": \"65600.00\",\n            \"clientId\": 7604,\n            \"passengerCount\": 2,\n            \"price\": \"67300.00\",\n            \"fareCode\": \"DRT2\",\n            \"taxes\": [\n              {\n                \"code\": \"RI\",\n                \"name\": \"АЭРОПОРТОВЫЙ СБОР\",\n                \"value\": 1700\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"Y7.Y7.C.3.ЛАЙТ\"\n          }\n        ],\n        \"racenumber\": \"3333\"\n      }\n    ]\n  },\n  \"brand\": \"Y7.Y7.C.3.ЛАЙТ\",\n  \"canEnterDoca\": false,\n  \"customer\": {\n    \"firstName\": \"EVGENY\",\n    \"lastName\": \"LITVINENKO\",\n    \"phone\": \"79043278432\",\n    \"eMail\": \"e.litvinenko@mute-lab.com\"\n  },\n  \"exchangeAllowed\": false,\n  \"paymentConfirmationAllowed\": \"false\"\n}",
+          "content": "\n{\n  \"pricesNotIssued\": {\n    \"totalTax\": \"4755.00\",\n    \"totalFare\": \"38000.00\",\n    \"totalPrice\": \"42755.00\",\n    \"taxes\": [\n      {\n        \"code\": \"PS\",\n        \"name\": \"PAPER SURCHARGE\",\n        \"value\": \"555.00\"\n      },\n      {\n        \"code\": \"YQ\",\n        \"name\": \"AIRLINE CHARGE\",\n        \"value\": \"4200.00\"\n      }\n    ],\n    \"currency\": \"RUB\",\n    \"segments\": [\n      {\n        \"aircompany\": \"UT\",\n        \"classCode\": \"Э\",\n        \"id\": \"1\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1585.00\",\n            \"luggNormMsr\": \"kg\",\n            \"fare\": \"28500.00\",\n            \"clientId\": 441,\n            \"passengerCount\": 1,\n            \"price\": \"30085.00\",\n            \"fareCode\": \"YLTRT\",\n            \"taxes\": [\n              {\n                \"code\": \"PS\",\n                \"name\": \"PAPER SURCHARGE\",\n                \"value\": 185\n              },\n              {\n                \"code\": \"YQ\",\n                \"name\": \"AIRLINE CHARGE\",\n                \"value\": 1400\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n            \"luggNorm\": 0\n          }\n        ],\n        \"racenumber\": \"453\"\n      },\n      {\n        \"aircompany\": \"UT\",\n        \"classCode\": \"Э\",\n        \"id\": \"2\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1585.00\",\n            \"luggNormMsr\": \"kg\",\n            \"fare\": \"6800.00\",\n            \"clientId\": 441,\n            \"passengerCount\": 1,\n            \"price\": \"8385.00\",\n            \"fareCode\": \"VLTRT\",\n            \"taxes\": [\n              {\n                \"code\": \"PS\",\n                \"name\": \"PAPER SURCHARGE\",\n                \"value\": 185\n              },\n              {\n                \"code\": \"YQ\",\n                \"name\": \"AIRLINE CHARGE\",\n                \"value\": 1400\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n            \"luggNorm\": 0\n          }\n        ],\n        \"racenumber\": \"509\"\n      },\n      {\n        \"aircompany\": \"UT\",\n        \"classCode\": \"Э\",\n        \"id\": \"3\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1585.00\",\n            \"luggNormMsr\": \"kg\",\n            \"fare\": \"2700.00\",\n            \"clientId\": 441,\n            \"passengerCount\": 1,\n            \"price\": \"4285.00\",\n            \"fareCode\": \"OLTRT\",\n            \"taxes\": [\n              {\n                \"code\": \"PS\",\n                \"name\": \"PAPER SURCHARGE\",\n                \"value\": 185\n              },\n              {\n                \"code\": \"YQ\",\n                \"name\": \"AIRLINE CHARGE\",\n                \"value\": 1400\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n            \"luggNorm\": 0\n          }\n        ],\n        \"racenumber\": \"274\"\n      }\n    ]\n  },\n  \"passengers\": [\n    {\n      \"documentCode\": \"PS\",\n      \"lastName\": \"TEST\",\n      \"hasSeats\": true,\n      \"gender\": \"male\",\n      \"documentType\": \"Паспорт гражданина РФ\",\n      \"documentNumber\": \"1234567890\",\n      \"index\": 0,\n      \"dateOfBirth\": \"27.11.1993\",\n      \"categoryCode\": \"AAA\",\n      \"eMail\": \"test@gmail.com\",\n      \"firstName\": \"TEST\",\n      \"nationalityCode\": \"RU\",\n      \"nationality\": \"Российская Федерация\",\n      \"phone\": \"79423789432\",\n      \"id\": 1\n    }\n  ],\n  \"conditionsPath\": \"https://private.sirena-travel.ru/docs/conditions-rus-eng.pdf\",\n  \"passengersWithSeatsCount\": 1,\n  \"canEnterDoco\": false,\n  \"refundAllowed\": false,\n  \"retryRegisterAllowed\": false,\n  \"addingExtraServicesAllowed\": true,\n  \"cancellationAllowed\": false,\n  \"flights\": [\n    {\n      \"date\": \"24.08.2018\",\n      \"cityName\": \"Тюмень\",\n      \"chainId\": \"chain-1-2\",\n      \"city\": \"TJM\",\n      \"flights\": [\n        {\n          \"date\": \"24.08.2018\",\n          \"originportName\": \"Внуково\",\n          \"destinationcity\": \"TJM\",\n          \"baggage\": [\n            {\n              \"luggNormMsr\": \"kg\",\n              \"passengerCode\": \"AAA\",\n              \"luggNorm\": 0\n            }\n          ],\n          \"departuredate\": \"24.08.2018\",\n          \"flightClass\": \"Э\",\n          \"delaydays\": \"0\",\n          \"flighttime\": \"2:40\",\n          \"arrivaldate\": \"25.08.2018\",\n          \"origincityName\": \"Москва\",\n          \"originport\": \"VKO\",\n          \"company\": {\n            \"code\": \"UT\",\n            \"code_en\": \"UT\",\n            \"name\": \"ЮТЭЙР\",\n            \"name_en\": \"UTAIR AVIATION\"\n          },\n          \"id\": 1,\n          \"airplaneName\": \"БОИНГ 737-500\",\n          \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n          \"destinationportName\": \"Рощино\",\n          \"originTerminal\": \"A\",\n          \"destinationcityName\": \"Тюмень\",\n          \"departuredayshift\": 0,\n          \"origincity\": \"MOW\",\n          \"vehicleCodeEn\": \"735\",\n          \"departuretime\": \"19:50\",\n          \"destinationport\": \"TJM\",\n          \"carrier\": \"UT\",\n          \"arrivaldayshift\": 1,\n          \"airplane\": \"БОИНГ 737-500\",\n          \"arrivaltime\": \"00:30\",\n          \"subclass\": \"Y\",\n          \"racenumber\": \"453\"\n        },\n        {\n          \"date\": \"25.08.2018\",\n          \"originportName\": \"Рощино\",\n          \"destinationcity\": \"MRV\",\n          \"baggage\": [\n            {\n              \"luggNormMsr\": \"kg\",\n              \"passengerCode\": \"AAA\",\n              \"luggNorm\": 0\n            }\n          ],\n          \"departuredate\": \"25.08.2018\",\n          \"flightClass\": \"Э\",\n          \"delaydays\": \"0\",\n          \"flighttime\": \"3:30\",\n          \"arrivaldate\": \"25.08.2018\",\n          \"origincityName\": \"Тюмень\",\n          \"originport\": \"TJM\",\n          \"company\": {\n            \"code\": \"UT\",\n            \"code_en\": \"UT\",\n            \"name\": \"ЮТЭЙР\",\n            \"name_en\": \"UTAIR AVIATION\"\n          },\n          \"id\": 2,\n          \"airplaneName\": \"БОИНГ 737-500\",\n          \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n          \"destinationcityName\": \"Минеральные Воды\",\n          \"departuredayshift\": 1,\n          \"origincity\": \"TJM\",\n          \"vehicleCodeEn\": \"735\",\n          \"departuretime\": \"09:40\",\n          \"carrier\": \"UT\",\n          \"arrivaldayshift\": 1,\n          \"airplane\": \"БОИНГ 737-500\",\n          \"arrivaltime\": \"11:10\",\n          \"subclass\": \"V\",\n          \"racenumber\": \"509\"\n        }\n      ],\n      \"flightTime\": \"15:20\",\n      \"connections\": [\n        {\n          \"nextAirportName\": \"Рощино\",\n          \"previousAirport\": \"TJM\",\n          \"previousAirportName\": \"Рощино\",\n          \"cityName\": \"Тюмень\",\n          \"city\": \"TJM\",\n          \"time\": \"09:10\",\n          \"nextAirport\": \"TJM\"\n        }\n      ]\n    },\n    {\n      \"date\": \"10.09.2018\",\n      \"chainId\": \"chain-3\",\n      \"flights\": [\n        {\n          \"date\": \"10.09.2018\",\n          \"destinationcity\": \"MOW\",\n          \"baggage\": [\n            {\n              \"luggNormMsr\": \"kg\",\n              \"passengerCode\": \"AAA\",\n              \"luggNorm\": 0\n            }\n          ],\n          \"departuredate\": \"10.09.2018\",\n          \"flightClass\": \"Э\",\n          \"delaydays\": \"0\",\n          \"flighttime\": \"2:10\",\n          \"arrivaldate\": \"10.09.2018\",\n          \"origincityName\": \"Минеральные Воды\",\n          \"destinationTerminal\": \"A\",\n          \"company\": {\n            \"code\": \"UT\",\n            \"code_en\": \"UT\",\n            \"name\": \"ЮТЭЙР\",\n            \"name_en\": \"UTAIR AVIATION\"\n          },\n          \"id\": 3,\n          \"airplaneName\": \"БОИНГ 737-800\",\n          \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n          \"destinationportName\": \"Внуково\",\n          \"destinationcityName\": \"Москва\",\n          \"departuredayshift\": 0,\n          \"origincity\": \"MRV\",\n          \"vehicleCodeEn\": \"738\",\n          \"departuretime\": \"20:40\",\n          \"destinationport\": \"VKO\",\n          \"carrier\": \"UT\",\n          \"arrivaldayshift\": 0,\n          \"airplane\": \"БОИНГ 737-800\",\n          \"arrivaltime\": \"22:50\",\n          \"subclass\": \"O\",\n          \"racenumber\": \"274\"\n        }\n      ]\n    }\n  ],\n  \"prices\": {\n    \"totalTax\": \"4755.00\",\n    \"totalFare\": \"38000.00\",\n    \"totalPrice\": \"42755.00\",\n    \"taxes\": [\n      {\n        \"code\": \"PS\",\n        \"name\": \"PAPER SURCHARGE\",\n        \"value\": \"555.00\"\n      },\n      {\n        \"code\": \"YQ\",\n        \"name\": \"AIRLINE CHARGE\",\n        \"value\": \"4200.00\"\n      }\n    ],\n    \"currency\": \"RUB\",\n    \"segments\": [\n      {\n        \"aircompany\": \"UT\",\n        \"classCode\": \"Э\",\n        \"id\": \"1\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1585.00\",\n            \"luggNormMsr\": \"kg\",\n            \"fare\": \"28500.00\",\n            \"clientId\": 441,\n            \"passengerCount\": 1,\n            \"price\": \"30085.00\",\n            \"fareCode\": \"YLTRT\",\n            \"taxes\": [\n              {\n                \"code\": \"PS\",\n                \"name\": \"PAPER SURCHARGE\",\n                \"value\": 185\n              },\n              {\n                \"code\": \"YQ\",\n                \"name\": \"AIRLINE CHARGE\",\n                \"value\": 1400\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n            \"luggNorm\": 0\n          }\n        ],\n        \"racenumber\": \"453\"\n      },\n      {\n        \"aircompany\": \"UT\",\n        \"classCode\": \"Э\",\n        \"id\": \"2\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1585.00\",\n            \"luggNormMsr\": \"kg\",\n            \"fare\": \"6800.00\",\n            \"clientId\": 441,\n            \"passengerCount\": 1,\n            \"price\": \"8385.00\",\n            \"fareCode\": \"VLTRT\",\n            \"taxes\": [\n              {\n                \"code\": \"PS\",\n                \"name\": \"PAPER SURCHARGE\",\n                \"value\": 185\n              },\n              {\n                \"code\": \"YQ\",\n                \"name\": \"AIRLINE CHARGE\",\n                \"value\": 1400\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n            \"luggNorm\": 0\n          }\n        ],\n        \"racenumber\": \"509\"\n      },\n      {\n        \"aircompany\": \"UT\",\n        \"classCode\": \"Э\",\n        \"id\": \"3\",\n        \"prices\": [\n          {\n            \"totalTax\": \"1585.00\",\n            \"luggNormMsr\": \"kg\",\n            \"fare\": \"2700.00\",\n            \"clientId\": 441,\n            \"passengerCount\": 1,\n            \"price\": \"4285.00\",\n            \"fareCode\": \"OLTRT\",\n            \"taxes\": [\n              {\n                \"code\": \"PS\",\n                \"name\": \"PAPER SURCHARGE\",\n                \"value\": 185\n              },\n              {\n                \"code\": \"YQ\",\n                \"name\": \"AIRLINE CHARGE\",\n                \"value\": 1400\n              }\n            ],\n            \"passengerCategory\": \"AAA\",\n            \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n            \"luggNorm\": 0\n          }\n        ],\n        \"racenumber\": \"274\"\n      }\n    ]\n  },\n  \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n  \"canEnterDoca\": false,\n  \"customer\": {\n    \"firstName\": \"TEST\",\n    \"lastName\": \"TEST\",\n    \"phone\": \"79423789432\",\n    \"eMail\": \"test@gmail.com\"\n  },\n  \"exchangeAllowed\": false,\n  \"paymentConfirmationAllowed\": \"false\"\n}",
           "type": "json"
         }
       ]
@@ -403,6 +403,101 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/json/passenger-add",
+    "title": "добавить пассажира к заказу",
+    "name": "add_passenger",
+    "group": "Passenger",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "categoryCode",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "firstName[1]",
+            "description": "<p>Имя пассажира</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "lastName[1]",
+            "description": "<p>Фамилия пассажира</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "gender[1]",
+            "description": "<p>Пол пассажира</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "dateOfBirth[1]",
+            "description": "<p>Дата рождения</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "nationality[1]",
+            "description": "<p>Гражданство</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "documentType[1]",
+            "description": "<p>Тип документа (паспорт, свидетельство о рожд. etc.)</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "documentNumber[1]",
+            "description": "<p>Номер документа</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "phone[1]",
+            "description": "<p>Номер телефона</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "email[1]",
+            "description": "<p>Email</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "\n{\"result\": \"ok\"}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/passenger/passenger-add.js",
+    "groupTitle": "Passenger"
+  },
+  {
+    "type": "get",
     "url": "/json/pricevariant",
     "title": "Запросить доступные способы оплаты",
     "description": "<p>В ответ приходит информация о всех доступных способах оплаты</p>",
@@ -412,7 +507,7 @@ define({ "api": [
       "examples": [
         {
           "title": "success:",
-          "content": "[\n{\n  \"conflicts_with_timelimit\": \"false\",\n  \"code\": \"plastic_card\",\n  \"conflicts_with_insurance\": \"false\",\n  \"price\": \"133926.00\",\n  \"name\": \"Пластиковая карта\",\n  \"currency\": \"RUB\",\n  \"paymentTypes\": {\n    \"plastic_card\": \"Пластиковая карта\"\n  },\n  \"type\": \"online\",\n  \"conflicts_with_aeroexpress\": \"false\",\n  \"selected\": \"true\",\n  \"timelimit\": \"23.08.2018 17:58\"\n}\n]",
+          "content": "\n[\n{\n  \"conflicts_with_timelimit\": \"false\",\n  \"code\": \"plastic_card\",\n  \"conflicts_with_insurance\": \"false\",\n  \"price\": \"42755.00\",\n  \"name\": \"Пластиковая карта\",\n  \"currency\": \"RUB\",\n  \"paymentTypes\": {\n    \"plastic_card\": \"Пластиковая карта\"\n  },\n  \"type\": \"online\",\n  \"conflicts_with_aeroexpress\": \"false\",\n  \"selected\": \"true\",\n  \"timelimit\": \"24.08.2018 11:25\"\n}\n]",
           "type": "json"
         }
       ]
@@ -422,50 +517,32 @@ define({ "api": [
     "groupTitle": "Price"
   },
   {
-    "type": "post",
-    "url": "/json/get-availability-for-direction.js",
-    "title": "Получить даты на которые доступны перелеты из origin-city-code в destination-city-code",
-    "name": "get_available_dates",
-    "group": "dates",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "origin-city-code",
-            "description": "<p>IATA код аэропорта вылета</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "destination-city-code",
-            "description": "<p>IATA код аэропорта прилета</p>"
-          }
-        ]
-      }
-    },
+    "type": "get",
+    "url": "/json/pricing-variant",
+    "title": "Варианты и суммы оплаты",
+    "description": "<p>В ответ приходит информация о всех доступных способах оплаты</p>",
+    "name": "pricing_variant",
+    "group": "Price",
     "success": {
       "examples": [
         {
-          "title": "{\"origin-city-code\": \"MOV\", \"destination-city-code\": \"MRV\" }:",
-          "content": "{\n  \"result\": \"ok\",\n  \"availabilityInfoDates\": [\n    {\n      \"date\": \"23.08.2018\",\n      \"available\": true\n    },\n    {\n      \"date\": \"24.08.2018\",\n      \"available\": true\n    },\n    ...\n  ]\n}",
+          "title": "success:",
+          "content": "{\n  \"totalTax\": \"4755.00\",\n  \"totalFare\": \"38000.00\",\n  \"totalPrice\": \"42755.00\",\n  \"currency\": \"RUB\",\n  \"segments\": [\n    {\n      \"aircompany\": \"UT\",\n      \"classCode\": \"Э\",\n      \"id\": \"1\",\n      \"prices\": [\n        {\n          \"totalTax\": \"1585.00\",\n          \"luggNormMsr\": \"kg\",\n          \"fare\": \"28500.00\",\n          \"clientId\": 441,\n          \"passengerCount\": 1,\n          \"price\": \"30085.00\",\n          \"fareCode\": \"YLTRT\",\n          \"taxes\": [\n            {\n              \"code\": \"PS\",\n              \"name\": \"PAPER SURCHARGE\",\n              \"value\": 185\n            },\n            {\n              \"code\": \"YQ\",\n              \"name\": \"AIRLINE CHARGE\",\n              \"value\": 1400\n            }\n          ],\n          \"passengerCategory\": \"AAA\",\n          \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n          \"luggNorm\": 0\n        }\n      ],\n      \"racenumber\": \"453\"\n    },\n    {\n      \"aircompany\": \"UT\",\n      \"classCode\": \"Э\",\n      \"id\": \"2\",\n      \"prices\": [\n        {\n          \"totalTax\": \"1585.00\",\n          \"luggNormMsr\": \"kg\",\n          \"fare\": \"6800.00\",\n          \"clientId\": 441,\n          \"passengerCount\": 1,\n          \"price\": \"8385.00\",\n          \"fareCode\": \"VLTRT\",\n          \"taxes\": [\n            {\n              \"code\": \"PS\",\n              \"name\": \"PAPER SURCHARGE\",\n              \"value\": 185\n            },\n            {\n              \"code\": \"YQ\",\n              \"name\": \"AIRLINE CHARGE\",\n              \"value\": 1400\n            }\n          ],\n          \"passengerCategory\": \"AAA\",\n          \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n          \"luggNorm\": 0\n        }\n      ],\n      \"racenumber\": \"509\"\n    },\n    {\n      \"aircompany\": \"UT\",\n      \"classCode\": \"Э\",\n      \"id\": \"3\",\n      \"prices\": [\n        {\n          \"totalTax\": \"1585.00\",\n          \"luggNormMsr\": \"kg\",\n          \"fare\": \"2700.00\",\n          \"clientId\": 441,\n          \"passengerCount\": 1,\n          \"price\": \"4285.00\",\n          \"fareCode\": \"OLTRT\",\n          \"taxes\": [\n            {\n              \"code\": \"PS\",\n              \"name\": \"PAPER SURCHARGE\",\n              \"value\": 185\n            },\n            {\n              \"code\": \"YQ\",\n              \"name\": \"AIRLINE CHARGE\",\n              \"value\": 1400\n            }\n          ],\n          \"passengerCategory\": \"AAA\",\n          \"brand\": \"UT.UT.Y.20.ЛАЙТ\",\n          \"luggNorm\": 0\n        }\n      ],\n      \"racenumber\": \"274\"\n    }\n  ],\n  \"fullList\": [\n    {\n      \"totalTax\": \"4755.00\",\n      \"default\": true,\n      \"totalFare\": \"38000.00\",\n      \"paymentForm\": \"plastic_card\",\n      \"totalPrice\": \"42755.00\",\n      \"currency\": \"RUB\"\n    }\n  ]\n}",
           "type": "json"
         }
       ]
     },
     "version": "0.0.0",
-    "filename": "api description/get-availability-for-direction.js",
-    "groupTitle": "dates"
+    "filename": "api description/payment/pricing-variant.js",
+    "groupTitle": "Price"
   },
   {
     "type": "post",
     "url": "/json/search-variants-mono-brand-cartesian",
-    "title": "Получить доступные сегменты",
+    "title": "",
+    "description": "<p>Получить доступные сегменты на день. отличается от cartesian-search-period тем что второй ищет сегменты на неделю</p>",
     "name": "get_available_segments",
-    "group": "segments",
+    "group": "brands",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -539,6 +616,141 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "api description/search-variants-mono-brand-cartesian.js",
-    "groupTitle": "segments"
+    "groupTitle": "brands"
+  },
+  {
+    "type": "post",
+    "url": "/json/get-availability-for-direction.js",
+    "title": "Получить даты на которые доступны перелеты из origin-city-code в destination-city-code",
+    "name": "get_available_dates",
+    "group": "dates",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "origin-city-code",
+            "description": "<p>IATA код аэропорта вылета</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "destination-city-code",
+            "description": "<p>IATA код аэропорта прилета</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "{\"origin-city-code\": \"MOV\", \"destination-city-code\": \"MRV\" }:",
+          "content": "{\n  \"result\": \"ok\",\n  \"availabilityInfoDates\": [\n    {\n      \"date\": \"23.08.2018\",\n      \"available\": true\n    },\n    {\n      \"date\": \"24.08.2018\",\n      \"available\": true\n    },\n    ...\n  ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/get-availability-for-direction.js",
+    "groupTitle": "dates"
+  },
+  {
+    "type": "post",
+    "url": "/json/cartesian-search-period",
+    "title": "",
+    "description": "<p>Получить доступные сегменты. отличается от search-variants-mono-brand-cartesian тем что второй ищет сегменты на день</p>",
+    "group": "segments",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "segmentsCount",
+            "description": "<p>Кол-во пассажиров</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "date[0]",
+            "description": "<p>Дата вылета</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "origin-city-code[0]",
+            "description": "<p>IATA код аэропорта вылета</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "destination-city-code[0]",
+            "description": "<p>NSK</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "date[1]",
+            "description": "<p>10.09.2018</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "origin-city-code[1]",
+            "description": "<p>NSK</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "destination-city-code[1]",
+            "description": "<p>MOW</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "count-aaa",
+            "description": "<p>2</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "lang",
+            "description": "<p>2</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "currency",
+            "description": "<p>2</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "пример для {\"segmentsCount\": 2, \"date[0]\": \"24.08.2018\", \"origin-city-code[0]\": \"MOW\", \"destination-city-code[1]\": \"MRV\"}:",
+          "content": "\n\n{\n  \"result\": \"ok\",\n  \"segmentsCalendar\": [\n    [\n      {\n        \"date\": \"24.08.2018\",\n        \"summ\": \"7785.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"25.08.2018\",\n        \"summ\": \"4485.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"26.08.2018\",\n        \"summ\": \"3485.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"27.08.2018\",\n        \"summ\": \"2985.00\",\n        \"currency\": \"RUB\"\n      }\n    ],\n    [\n      {\n        \"date\": \"07.09.2018\",\n        \"summ\": \"3785.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"08.09.2018\",\n        \"summ\": \"3485.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"09.09.2018\",\n        \"summ\": \"3285.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"10.09.2018\",\n        \"summ\": \"3285.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"11.09.2018\",\n        \"summ\": \"3285.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"12.09.2018\",\n        \"summ\": \"3285.00\",\n        \"currency\": \"RUB\"\n      },\n      {\n        \"date\": \"13.09.2018\",\n        \"summ\": \"3285.00\",\n        \"currency\": \"RUB\"\n      }\n    ]\n  ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/cartesian-search-period.js",
+    "groupTitle": "segments",
+    "name": "PostJsonCartesianSearchPeriod"
   }
 ] });
