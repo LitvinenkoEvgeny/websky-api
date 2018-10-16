@@ -1,10 +1,12 @@
 /**
- @api {get} /json/extra-services-new
- запросить инфомацию о заказе
+ @api {get} /json/order-info
+ Запросить объект заказа
  @apiDescription
  В ответ приходит информация о заказе со всеми ценами(totalPrice), налогами (totalTax)
  и пассажирами к которым относится этот заказ
+
  @apiName order info
+
  @apiGroup Order
 
 

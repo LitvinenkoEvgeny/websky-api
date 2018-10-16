@@ -1,5 +1,5 @@
 /**
- @api {get} /json/getPassengers
+ @api {get} /json/get-passengers
  Получить сохраненного пассажира
 
  @apiDescription
@@ -10,8 +10,6 @@
  @apiGroup Oxygen
 
  @apiParam {String} login Email пользователя
-
-
 
  @apiSuccessExample {json} success:
  {
