@@ -1,5 +1,5 @@
 /**
- @api {get} /json/get-passengers
+ @api {get} /json/getPassengers
  Получить сохраненного пассажира
 
  @apiDescription
