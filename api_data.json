@@ -880,26 +880,6 @@
     "groupTitle": "Oxygen"
   },
   {
-    "type": "get",
-    "url": "/json/passengers-check",
-    "title": "Получить правила заполнения информации о пассажире",
-    "description": "<p>Получить правила заполнения информации о пассажире их можно использовать для проверки правильности заполнения input'ов на странице /#/passengers</p>",
-    "name": "get_passenger_info_rules",
-    "group": "Oxygen",
-    "success": {
-      "examples": [
-        {
-          "title": "success:",
-          "content": "{\n  \"emailRegex\": \"^[a-zA-Z0-9,!#\\\\$%&'\\\\*\\\\+/=\\\\?\\\\^_`\\\\{\\\\|}~-]+(\\\\.[a-zA-Z0-9,!#\\\\$%&'\\\\*\\\\+/=\\\\?\\\\^_`\\\\{\\\\|}~-]+)*@[a-zA-Z0-9-\\\\^_]+(\\\\.[a-zA-Z0-9-]+)*\\\\.([a-zA-Z]{2,})$\",\n  \"passengerLastNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"requirePhone\": false,\n  \"passengers\": [\n    {\n      \"passengerType\": \"ADULT\",\n      \"rangeBirthFrom\": \"18.10.1918\",\n      \"documents\": [\n        {\n          \"code\": \"NP\",\n          \"name\": \"National passport\",\n          \"defaultSelectedForeign\": \"true\",\n          \"expiry\": \"01.11.2018\",\n          \"notAllow\": \"russian\"\n        },\n        {\n          \"code\": \"PS\",\n          \"name\": \"Паспорт гражданина РФ\",\n          \"defaultSelectedRussian\": \"true\",\n          \"notAllow\": \"foreign\"\n        },\n        {\n          \"code\": \"PSP\",\n          \"name\": \"Заграничный паспорт\",\n          \"expiry\": \"01.11.2018\",\n          \"notAllow\": \"foreign\"\n        },\n        {\n          \"code\": \"SR\",\n          \"name\": \"Свидетельство о рождении\"\n        }\n      ],\n      \"count\": 1,\n      \"rangeBirthTo\": \"17.10.2006\",\n      \"type\": \"AAA\"\n    }\n  ],\n  \"phoneRegex\": \"^[0-9]{11,15}$\",\n  \"requireEmail\": false,\n  \"passengerFirstNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"allowEmail\": true,\n  \"isLatinNamesOnly\": false,\n  \"allowPhone\": true,\n  \"countriesAvailableForDoco\": [],\n  \"countriesAvailableForDoca\": []\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "api description/oxygen/passengers-check.js",
-    "groupTitle": "Oxygen"
-  },
-  {
     "type": "post",
     "url": "/json/login",
     "title": "Залогинить пользователя",
@@ -930,6 +910,59 @@
     },
     "version": "0.0.0",
     "filename": "api description/oxygen/login.js",
+    "groupTitle": "Oxygen"
+  },
+  {
+    "type": "get",
+    "url": "/json/passengers-check",
+    "title": "Получить правила заполнения информации о пассажире",
+    "description": "<p>Получить правила заполнения информации о пассажире их можно использовать для проверки правильности заполнения input'ов на странице /#/passengers</p>",
+    "name": "get_passenger_info_rules",
+    "group": "Oxygen",
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\n  \"emailRegex\": \"^[a-zA-Z0-9,!#\\\\$%&'\\\\*\\\\+/=\\\\?\\\\^_`\\\\{\\\\|}~-]+(\\\\.[a-zA-Z0-9,!#\\\\$%&'\\\\*\\\\+/=\\\\?\\\\^_`\\\\{\\\\|}~-]+)*@[a-zA-Z0-9-\\\\^_]+(\\\\.[a-zA-Z0-9-]+)*\\\\.([a-zA-Z]{2,})$\",\n  \"passengerLastNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"requirePhone\": false,\n  \"passengers\": [\n    {\n      \"passengerType\": \"ADULT\",\n      \"rangeBirthFrom\": \"18.10.1918\",\n      \"documents\": [\n        {\n          \"code\": \"NP\",\n          \"name\": \"National passport\",\n          \"defaultSelectedForeign\": \"true\",\n          \"expiry\": \"01.11.2018\",\n          \"notAllow\": \"russian\"\n        },\n        {\n          \"code\": \"PS\",\n          \"name\": \"Паспорт гражданина РФ\",\n          \"defaultSelectedRussian\": \"true\",\n          \"notAllow\": \"foreign\"\n        },\n        {\n          \"code\": \"PSP\",\n          \"name\": \"Заграничный паспорт\",\n          \"expiry\": \"01.11.2018\",\n          \"notAllow\": \"foreign\"\n        },\n        {\n          \"code\": \"SR\",\n          \"name\": \"Свидетельство о рождении\"\n        }\n      ],\n      \"count\": 1,\n      \"rangeBirthTo\": \"17.10.2006\",\n      \"type\": \"AAA\"\n    }\n  ],\n  \"phoneRegex\": \"^[0-9]{11,15}$\",\n  \"requireEmail\": false,\n  \"passengerFirstNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"allowEmail\": true,\n  \"isLatinNamesOnly\": false,\n  \"allowPhone\": true,\n  \"countriesAvailableForDoco\": [],\n  \"countriesAvailableForDoca\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/oxygen/passengers-check.js",
+    "groupTitle": "Oxygen"
+  },
+  {
+    "type": "get",
+    "url": "/json/getPassengers",
+    "title": "Получить сохраненного пассажира",
+    "description": "<p>Получить сохраненного пассажира  из личного кабинета в ответ вернется созданный пассажир, созданные для него документы и т.д. это можно использовать для автозаполнения полей ввода (пассажир единожды в личном кабинете сохраняет информацию) потом может в один клик заполнить все поля</p>",
+    "name": "get_saved_passengers",
+    "group": "Oxygen",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "login",
+            "description": "<p>Email пользователя</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\n  \"passengers\": [\n    {\n      \"lastName\": \"LITVINENKO\",\n      \"firstName\": \"EVGENY\",\n      \"firstNameEn\": \"EVGENY\",\n      \"gender\": \"male\",\n      \"nationality\": \"AU\",\n      \"phone\": \"78947328974\",\n      \"documents\": [\n        {\n          \"documentDate\": \"27.11.2018\",\n          \"documentType\": \"NP\",\n          \"documentNumber\": \"423423234\"\n        }\n      ],\n      \"dateOfBirth\": \"27.11.1993\",\n      \"id\": 1627141,\n      \"lastNameEn\": \"LITVINENKO\",\n      \"email\": \"test@gmail.com\"\n    }\n  ],\n  \"passengerLastNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"passengerFirstNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"passengerFirstNameLatRegexp\": \"^[- a-zA-Z]{2,41}$\",\n  \"passengerLastNameLatRegexp\": \"^[- a-zA-Z]{2,41}$\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/oxygen/getPassengers.js",
     "groupTitle": "Oxygen"
   },
   {
