@@ -468,7 +468,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/json/cartesian-search-period",
-    "title": "",
+    "title": "получение доступных перелетов на неделю",
     "description": "<p>Получить доступные сегменты. отличается от search-variants-mono-brand-cartesian тем что второй ищет сегменты на день</p>",
     "group": "Oxygen",
     "parameter": {
@@ -760,7 +760,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/json/search-variants-mono-brand-cartesian",
-    "title": "",
+    "title": "получение доступных перелетов на один день",
     "description": "<p>Получить доступные сегменты на день. отличается от cartesian-search-period тем что второй ищет сегменты на неделю</p>",
     "name": "get_available_segments",
     "group": "Oxygen",
