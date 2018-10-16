@@ -4,7 +4,7 @@
  @apiDescription
  Получить доступные сегменты. отличается от search-variants-mono-brand-cartesian
  тем что второй ищет сегменты на день
- @apiGroup segments
+ @apiGroup Oxygen
 
 
  @apiParam {string} segmentsCount Кол-во пассажиров

@@ -6,7 +6,7 @@
  тем что второй ищет сегменты на неделю
 
  @apiName get available segments
- @apiGroup brands
+ @apiGroup Oxygen
 
 
  @apiParam {string} segmentsCount Кол-во пассажиров

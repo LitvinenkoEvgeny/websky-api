@@ -4,7 +4,7 @@
  @apiDescription
  В ответ приходит информация о всех доступных способах оплаты
  @apiName pricing variant
- @apiGroup Price
+ @apiGroup Oxygen
  @apiSuccessExample {json} success:
  {
    "totalTax": "4755.00",

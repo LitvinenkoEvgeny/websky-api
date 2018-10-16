@@ -3,7 +3,7 @@
  добавить пассажира к заказу
 
  @apiName add passenger
- @apiGroup Passenger
+ @apiGroup Order
 
 
  @apiParam {string} categoryCode Трехбуквенный код пассажира [Взрослый, ребенок, младенец] [AAA, RGB, RMG]

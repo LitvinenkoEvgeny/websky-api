@@ -1,7 +1,7 @@
 /**
  @api {get, post} /json/dependence-cities Получить IATA коды доступных городов
  @apiName get Cities
- @apiGroup Cities
+ @apiGroup Oxygen
  @apiParam {string} [cityCode] IATA код аэропорта вылета, если передан, вернется только {destination: [...]}
  @apiParam {string} [returnPoints]  Возвращать только аэропорты назначения или вернуть объект origin
  @apiSuccessExample {json} Без параметра returnPoints и cityCode:
