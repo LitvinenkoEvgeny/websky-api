@@ -11,7 +11,6 @@
 
  @apiParam {String} login Email пользователя
 
- @apiPrivate
 
 
  @apiSuccessExample {json} success:
