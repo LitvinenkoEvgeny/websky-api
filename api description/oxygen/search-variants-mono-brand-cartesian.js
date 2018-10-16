@@ -1,5 +1,6 @@
 /**
  @api {post} /json/search-variants-mono-brand-cartesian
+ получение доступных перелетов на один день
 
  @apiDescription
  Получить доступные сегменты на день. отличается от cartesian-search-period

@@ -1,5 +1,6 @@
 ### Работа с движком websky в пределах одной сессии
 
+#### Инициализация
 - сначала происходит [запрос][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-get_aliases] получения языковых переменных для всего движка
 - после [запрашиваем][http://tst.sirena-travel.ru/websky-ut/json/aliases-declaration.json
 ] языковые переменные для конкретной авиакомпании
@@ -8,5 +9,8 @@
 - далее, [запрашиваем][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-get_application_constants] константы
 - [получаем][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-get_application_constants] список городов
 - и [стран][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-countries]
-- пытаемся восстановить [предыдущий поиск][]
+- пытаемся восстановить предыдущий поиск
+
+#### Поиск
+- [запрос][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen] [][] на получение доступных дат и перелетов
 
