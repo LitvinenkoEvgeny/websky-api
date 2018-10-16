@@ -13,8 +13,6 @@
  @apiParam {Date} to
  @apiParam {Sring} searchType
 
- @apiPrivate
-
 
  @apiSuccessExample {json} success:
 
