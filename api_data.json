@@ -1024,5 +1024,52 @@
     "version": "0.0.0",
     "filename": "api description/payment/pricevariant.js",
     "groupTitle": "Price"
+  },
+  {
+    "type": "POST",
+    "url": "/json/getOrders",
+    "title": "Получить заказы все закзы для пользователя (приватный endpoint)",
+    "description": "<p>вернет все заказы данного пользователя</p>",
+    "name": "get_orders",
+    "group": "Private",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "from",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Date",
+            "optional": false,
+            "field": "to",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Sring",
+            "optional": false,
+            "field": "searchType",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "\n{\n  \"result\": \"ok\",\n  \"found\": 40,\n  \"total\": 97,\n  \"orders\": [\n    {\n      \"pnr\": \"1PGB5B\",\n      \"lastName\": \"TEST\",\n      \"seance\": \"5F\",\n      \"book_time\": \"13.07.2018 13:03\",\n      \"sum\": \"0.00\",\n      \"npax\": \"1\",\n      \"common_status\": \"cancelled\",\n      \"currency\": \"EUR\",\n      \"payment_form\": \"CC\",\n      \"payment_type\": \"VI\",\n      \"trip\": [\n        {\n          \"company\": \"МД\",\n          \"flight\": \"234\",\n          \"subclass\": \"Х\",\n          \"departure\": {\n            \"city\": \"VRN\",\n            \"cityCode\": \"VRN\",\n            \"airport\": \"VRN\",\n            \"airportCode\": \"VRN\",\n            \"dateTime\": \"14.07.2018\"\n          },\n          \"arrival\": {\n            \"city\": \"КШН\",\n            \"cityCode\": \"KIV\",\n            \"dateTime\": \"14.07.2018\"\n          }\n        }\n      ]\n    },\n    {\n      \"pnr\": \"1PGB5V\",\n      \"lastName\": \"TEST\",\n      \"seance\": \"5F\",\n      \"book_time\": \"13.07.2018 13:04\",\n      \"sum\": \"0.00\",\n      \"npax\": \"1\",\n      \"common_status\": \"cancelled\",\n      \"currency\": \"EUR\",\n      \"payment_form\": \"НА\",\n      \"trip\": [\n        {\n          \"company\": \"МД\",\n          \"flight\": \"234\",\n          \"subclass\": \"Х\",\n          \"departure\": {\n            \"city\": \"VRN\",\n            \"cityCode\": \"VRN\",\n            \"airport\": \"VRN\",\n            \"airportCode\": \"VRN\",\n            \"dateTime\": \"14.07.2018\"\n          },\n          \"arrival\": {\n            \"city\": \"КШН\",\n            \"cityCode\": \"KIV\",\n            \"dateTime\": \"14.07.2018\"\n          }\n        }\n      ]\n    }\n  ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/private/getOrders.js",
+    "groupTitle": "Private"
   }
 ]
