@@ -12,5 +12,8 @@
 - пытаемся восстановить предыдущий поиск
 
 #### Поиск
-- [запрос][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen] [][] на получение доступных дат и перелетов
+- [поиск доступных перелетов на неделю][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-PostJsonCartesianSearchPeriod]
+- [поиск доступных перелетов в выбранный день][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-get_available_segments]
+- [запрос на получение вариантов и суммы оплаты][https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-pricing_variant]
+- [если пользователь авторизован, запросить сохранненых пассажиров][]
 
