@@ -1,11 +1,14 @@
 /**
  @api {get} /json/get-last-search-params
  Получить информацию о последнем поиске пользователя.
+
  @apiDescription
  {result: "empty"}
  либо
  см. success
+
  @apiName get application constants
+
  @apiGroup Oxygen
 
  @apiSuccessExample {json} success:

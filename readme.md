@@ -32,7 +32,7 @@
 пока не описаны.
 ЛК позволяет:
  - [авторизовать пассажира](https://litvinenkoevgeny.github.io/websky-api/#api-Oxygen-get_passenger_info_rules)
- - просмотреть все заказы
+ - [просмотреть все заказы](https://litvinenkoevgeny.github.io/websky-api/#api-Private-get_orders)
  - создать пассажира для автозаполнения
  - скинуть пароль
 
