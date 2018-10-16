@@ -7,7 +7,6 @@
  @apiGroup Oxygen
 
  @apiSuccessExample {json} success:
-
  {
      "passengerFirstNameLatRegexp": "^[- a-zA-Z]{2,41}$",
      "passengerLastNameLatRegexp": "^[- a-zA-Z]{2,41}$",

@@ -217,36 +217,23 @@ define({ "api": [
     "groupTitle": "Order"
   },
   {
-    "type": "post",
-    "url": "/json/change-payment-form",
-    "title": "Изменить способ оплаты",
-    "description": "<p>в ответ либо {&quot;result&quot;: &quot;ok&quot;} либо код и описание ошибки</p>",
-    "name": "modify_service",
+    "type": "get",
+    "url": "/json/available-payment-forms-and-prices",
+    "title": "запросить доступные формы оплаты",
+    "description": "<p>В ответ вернутся доступные формы оплаты</p>",
+    "name": "get_saved_passengers",
     "group": "Order",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "string",
-            "optional": false,
-            "field": "formPay",
-            "description": "<p>Форма оплаты</p>"
-          }
-        ]
-      }
-    },
     "success": {
       "examples": [
         {
           "title": "success:",
-          "content": "{\"result\" : \"ok\"}",
+          "content": "[\n    {\n      \"conflicts_with_timelimit\": \"false\",\n      \"code\": \"plastic_card\",\n      \"conflicts_with_insurance\": \"false\",\n      \"price\": \"5400.00\",\n      \"name\": \"Пластиковая карта\",\n      \"currency\": \"RUB\",\n      \"paymentTypes\": {\n        \"plastic_card\": \"Пластиковая карта\"\n      },\n      \"type\": \"online\",\n      \"conflicts_with_aeroexpress\": \"false\",\n      \"selected\": \"true\",\n      \"timelimit\": \"16.10.2018 16:28\"\n    }\n]",
           "type": "json"
         }
       ]
     },
     "version": "0.0.0",
-    "filename": "api description/order/change-payment-form.js",
+    "filename": "api description/order/available-payment-forms-and-prices.js",
     "groupTitle": "Order"
   },
   {
@@ -336,6 +323,39 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "api description/order/extra-services-modify.js",
+    "groupTitle": "Order"
+  },
+  {
+    "type": "post",
+    "url": "/json/change-payment-form",
+    "title": "Изменить способ оплаты",
+    "description": "<p>в ответ либо {&quot;result&quot;: &quot;ok&quot;} либо код и описание ошибки</p>",
+    "name": "modify_service",
+    "group": "Order",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "formPay",
+            "description": "<p>Форма оплаты</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\"result\" : \"ok\"}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/order/change-payment-form.js",
     "groupTitle": "Order"
   },
   {
@@ -660,6 +680,26 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/json/application-constants",
+    "title": "Получить константные переменные приложения",
+    "description": "<p>В ответе будет находится объект</p>",
+    "name": "get_application_constants",
+    "group": "Oxygen",
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\n    \"passengerFirstNameLatRegexp\": \"^[- a-zA-Z]{2,41}$\",\n    \"passengerLastNameLatRegexp\": \"^[- a-zA-Z]{2,41}$\",\n    \"passengerLastNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n    \"pnrOrTicketRegexp\": \"(^[0-9БВГДКЛМНПРСТФХЦЖШBVGDKLMNPRSTFXCZW]{6,6}$)|(^[0-9A-ZА-Я]{13,13}$)\",\n    \"ticketRegexp\": \"^[0-9A-ZА-Я]{13,13}$\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/oxygen/application-constants.js",
+    "groupTitle": "Oxygen"
+  },
+  {
+    "type": "get",
     "url": "/json/get-last-search-params",
     "title": "Получить информацию о последнем поиске пользователя.",
     "description": "<p>{result: &quot;empty&quot;} либо см. success</p>",
@@ -676,26 +716,6 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "api description/oxygen/get-last-search-params.js",
-    "groupTitle": "Oxygen"
-  },
-  {
-    "type": "get",
-    "url": "/json/application-constants",
-    "title": "Получить константные переменные приложения",
-    "description": "<p>В ответе будет находится объект</p>",
-    "name": "get_application_constants",
-    "group": "Oxygen",
-    "success": {
-      "examples": [
-        {
-          "title": "success:",
-          "content": "\n{\n    \"passengerFirstNameLatRegexp\": \"^[- a-zA-Z]{2,41}$\",\n    \"passengerLastNameLatRegexp\": \"^[- a-zA-Z]{2,41}$\",\n    \"passengerLastNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n    \"pnrOrTicketRegexp\": \"(^[0-9БВГДКЛМНПРСТФХЦЖШBVGDKLMNPRSTFXCZW]{6,6}$)|(^[0-9A-ZА-Я]{13,13}$)\",\n    \"ticketRegexp\": \"^[0-9A-ZА-Я]{13,13}$\"\n}",
-          "type": "json"
-        }
-      ]
-    },
-    "version": "0.0.0",
-    "filename": "api description/oxygen/application-constants.js",
     "groupTitle": "Oxygen"
   },
   {
@@ -857,6 +877,59 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "api description/oxygen/get-params.js",
+    "groupTitle": "Oxygen"
+  },
+  {
+    "type": "get",
+    "url": "/json/passengers-check",
+    "title": "Получить правила заполнения информации о пассажире",
+    "description": "<p>Получить правила заполнения информации о пассажире их можно использовать для проверки правильности заполнения input'ов на странице /#/passengers</p>",
+    "name": "get_passenger_info_rules",
+    "group": "Oxygen",
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\n  \"emailRegex\": \"^[a-zA-Z0-9,!#\\\\$%&'\\\\*\\\\+/=\\\\?\\\\^_`\\\\{\\\\|}~-]+(\\\\.[a-zA-Z0-9,!#\\\\$%&'\\\\*\\\\+/=\\\\?\\\\^_`\\\\{\\\\|}~-]+)*@[a-zA-Z0-9-\\\\^_]+(\\\\.[a-zA-Z0-9-]+)*\\\\.([a-zA-Z]{2,})$\",\n  \"passengerLastNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"requirePhone\": false,\n  \"passengers\": [\n    {\n      \"passengerType\": \"ADULT\",\n      \"rangeBirthFrom\": \"18.10.1918\",\n      \"documents\": [\n        {\n          \"code\": \"NP\",\n          \"name\": \"National passport\",\n          \"defaultSelectedForeign\": \"true\",\n          \"expiry\": \"01.11.2018\",\n          \"notAllow\": \"russian\"\n        },\n        {\n          \"code\": \"PS\",\n          \"name\": \"Паспорт гражданина РФ\",\n          \"defaultSelectedRussian\": \"true\",\n          \"notAllow\": \"foreign\"\n        },\n        {\n          \"code\": \"PSP\",\n          \"name\": \"Заграничный паспорт\",\n          \"expiry\": \"01.11.2018\",\n          \"notAllow\": \"foreign\"\n        },\n        {\n          \"code\": \"SR\",\n          \"name\": \"Свидетельство о рождении\"\n        }\n      ],\n      \"count\": 1,\n      \"rangeBirthTo\": \"17.10.2006\",\n      \"type\": \"AAA\"\n    }\n  ],\n  \"phoneRegex\": \"^[0-9]{11,15}$\",\n  \"requireEmail\": false,\n  \"passengerFirstNameRegexp\": \"^[- а-яА-ЯЁёa-zA-Z]{2,41}$\",\n  \"allowEmail\": true,\n  \"isLatinNamesOnly\": false,\n  \"allowPhone\": true,\n  \"countriesAvailableForDoco\": [],\n  \"countriesAvailableForDoca\": []\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/oxygen/passengers-check.js",
+    "groupTitle": "Oxygen"
+  },
+  {
+    "type": "post",
+    "url": "/json/login",
+    "title": "Залогинить пользователя",
+    "description": "<p>Получить правила заполнения информации о пассажире их можно использовать для проверки правильности заполнения input'ов на странице /#/passengers</p>",
+    "name": "get_passenger_info_rules",
+    "group": "Oxygen",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "login",
+            "description": "<p>Email пользователя</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "success:",
+          "content": "{\"result\": \"ok\"}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api description/oxygen/login.js",
     "groupTitle": "Oxygen"
   },
   {
